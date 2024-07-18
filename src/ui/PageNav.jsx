@@ -5,7 +5,7 @@ const PageNav = ({ className }) => {
   return (
     <span
       className={cn(
-        "hidden desktop:flex desktop:items-center font-lightbold desktop:justify-center",
+        "hidden smDesktop:block smDesktop:mr-14 desktop:flex desktop:items-center font-lightbold desktop:justify-center desktop:mr-1",
         className
       )}
     >

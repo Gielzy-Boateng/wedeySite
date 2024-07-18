@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Downloader = () => {
   return (
-    <span className="  flex  space-x-2 mr-4 desktop:space-x-6 z-0">
+    <span className=" laptop:ml-10 smDesktop:ml-16 desktop:ml-0 mdDesktop:ml-0 flex  space-x-2 mr-4 desktop:space-x-6 z-0">
       <Link
         to="/"
         className="transition duration-300 hover:transform hover:-translate-y-2 invert-0 hover:invert-[1]"

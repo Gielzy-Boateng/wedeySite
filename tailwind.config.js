@@ -6,14 +6,21 @@ export default {
       wedey: "Poppins",
     },
     screens: {
-      tablet: "420px",
-      // => @media (min-width: 640px) { ... }
+      tablet: "450px",
+      // => @media (min-width: 450px) { ... }
 
-      laptop: "1024px",
-      // => @media (min-width: 1024px) { ... }
+      laptop: "530px",
+      // => @media (min-width: 530px) { ... }
+
+      bgLaptop: "620px",
+      // => @media (min-width: 620px) { ... }
+      smDesktop: "720px",
+      // => @media (min-width: 720px) { ... }
+      mdDesktop: "850px",
+      // => @media (min-width: 850px) { ... }
 
       desktop: "1230px",
-      // => @media (min-width: 1280px) { ... }
+      // => @media (min-width: 1230px) { ... }
     },
 
     extend: {

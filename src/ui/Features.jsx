@@ -70,18 +70,21 @@ const Features = () => {
         id="features"
       >
         <h1 className="text-lg font-bold text-red-500">Features</h1>
-        <h2 className="text-stone-900 text-3xl font-bold">
+        <h2 className="text-stone-900 text-3xl font-bold tablet:w-[400px] laptop:w-[450px] laptop:ml-3 tablet:ml-16">
           Digitizing Our Local Markets
         </h2>
       </div>
 
-      <div className="flex flex-col items-center justify-center desktop:flex desktop:flex-row desktop:items-center desktop:justify-between desktop:ml-16">
+      <div className="flex flex-col items-center justify-center laptop:mr-28 mdDesktop:flex mdDesktop:flex-row mdDesktop:items-center mdDesktop:justify-between mdDesktop:mr-2 mdDesktop:ml-10 desktop:flex desktop:flex-row desktop:items-center desktop:justify-between desktop:ml-16 desktop:mr-1">
         <div className="flex flex-col ">
           {/* left */}
           {leftSide.map((left) => (
-            <div key={left.info} className="mb-8 w-80">
+            <div
+              key={left.info}
+              className="mb-8 laptop:mb-16 desktop:mb-8 w-80 mdDesktop:w-60 desktop:w-80"
+            >
               <img src={left.imgSrc} alt={left.alt} className="h-12" />
-              <h1 className="text-lg">
+              <h1 className="text-lg tablet:w-[450px] mdDesktop:w-[250px] desktop:w-[350px]">
                 <span className="font-bold text-lg">{left.title}</span>
                 <br />
                 {left.info}
@@ -91,17 +94,21 @@ const Features = () => {
         </div>
 
         {/* Image */}
-        <div className="hidden desktop:inline-block">
-          <img src="/assets/shot-3.jpg" alt="shot-3" className="h-[570px]" />
+        <div className="hidden mdDesktop:block desktop:block">
+          <img
+            src="/assets/shot-3.jpg"
+            alt="shot-3"
+            className="h-[570px] desktop:h-[570px] mdDesktop:h-[450px]"
+          />
         </div>
 
         {/* right */}
 
-        <div className="flex flex-col desktop:mr-10 ">
+        <div className="flex flex-col desktop:mr-5 ">
           {rightSide.map((right) => (
-            <div key={right.info} className="mb-8 w-80">
+            <div key={right.info} className="mb-8 laptop:mb-16 w-80">
               <img src={right.imgSrc} alt={right.alt} className="h-12" />
-              <h1 className="text-lg">
+              <h1 className="text-lg tablet:w-[400px] mdDesktop:w-[250px] desktop:w-[350px] ">
                 <span className="font-bold text-lg">{right.title}</span>
                 <br />
                 {right.info}

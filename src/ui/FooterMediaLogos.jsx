@@ -7,7 +7,7 @@ const FooterMediaLogos = () => {
         <img
           src="assets/fb.svg"
           alt="Facebook Logo"
-          className="h-9 mt-3 space-x-6 bg-[#00000038] p-2 rounded-lg hover:bg-blue-700 transition -colors duration-400"
+          className="h-9 mt-3 space-x-6 bg-[#00000038] p-2 rounded-lg hover:bg-blue-700 transition-colors duration-400"
         />
       </Link>
 
@@ -20,7 +20,7 @@ const FooterMediaLogos = () => {
         <img
           src="assets/twitter.svg"
           alt="Twitter Logo"
-          className="h-9 space-x-10 mt-3 p-2 bg-[#00000038] rounded-lg hover:bg-blue-500 transition -colors duration-400"
+          className="h-9 space-x-10 mt-3 p-2 bg-[#00000038] rounded-lg hover:bg-blue-500 transition-colors duration-400"
         />
       </Link>
       <Link
@@ -32,7 +32,7 @@ const FooterMediaLogos = () => {
         <img
           src="assets/instagram.svg"
           alt="Instagram Logo"
-          className="h-9 space-x-15 mt-2 p-2 bg-[#00000038] rounded-lg hover:bg-red-500 transition -colors duration-400"
+          className="h-9 space-x-15 mt-2 p-2 bg-[#00000038] rounded-lg hover:bg-red-500 transition-colors duration-400"
         />
       </Link>
       <Link
@@ -44,7 +44,7 @@ const FooterMediaLogos = () => {
         <img
           src="assets/whatsapp.svg"
           alt="Whatsapp Logo"
-          className="h-9 space-x-10 mt-2 mr-3 p-2 bg-[#00000038] rounded-lg hover:bg-green-500 transition -colors duration-400"
+          className="h-9 space-x-10 mt-2 mr-3 p-2 bg-[#00000038] rounded-lg hover:bg-green-500 transition duration-400"
         />
       </Link>
     </div>

@@ -43,7 +43,7 @@ const TextRotator = () => {
   );
 
   return (
-    <p className="text-[16px] font-lightbold text-white bg-[#00000038] inline-block py-2 px-4 rounded-full">
+    <p className="text-[16px] font-lightbold text-white bg-[#00000038] inline-block py-2 px-4 rounded-full laptop:ml-24 smDesktop:ml-36 mdDesktop:ml-0 desktop:ml-0">
       #WeDey
       <span>{displayedText}</span>
     </p>
