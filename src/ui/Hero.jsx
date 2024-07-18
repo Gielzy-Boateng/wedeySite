@@ -5,7 +5,7 @@ import TextRotator from "./TextRotator";
 const Hero = () => {
   return (
     <WidthConstraint className="flex mt-28 flex-col laptop:flex laptop:flex-col laptop:items-center mdDesktop:flex mdDesktop:flex-row mdDesktop:items-center mdDesktop:justify-center  desktop:flex desktop:flex-row desktop:items-center desktop:mt-8">
-      <div className="mb-5 ml-5 desktop:mb-10 desktop:ml-14 bgLaptop:space-y-6 space-y-4">
+      <div className="mb-16 bgLaptop:mb-8 ml-5 desktop:mb-10 desktop:ml-14 bgLaptop:space-y-6 space-y-4">
         <TextRotator />
         <h1 className="text-[40px] tablet:w-[400px] laptop:w-[450px] bgLaptop:w-[500px] smDesktop:w-[510px] mdDesktop:w-[450px] mdDesktop:text-[45px] bgLaptop:text-[55px] tablet:text-[45px] w-[300px] desktop:text-[55px] font-semibold text-white desktop:w-[510px] leading-tight">
           WE BRINGING THE LOCAL MARKETS TO YOU

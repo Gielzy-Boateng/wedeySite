@@ -14,7 +14,7 @@ const Header = ({ about }) => {
         about && "bg-white"
       )}
     >
-      <WedeyLogo className="z-50 ml-[15px]" />
+      <WedeyLogo className="z-50 ml-[5px]" />
       {location.pathname === "/about" && <PageNav className="space-x-6" />}
       <NavMediaLogos className="mr-28" />
     </header>
