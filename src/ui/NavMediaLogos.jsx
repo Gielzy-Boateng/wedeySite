@@ -35,7 +35,10 @@ const NavMediaLogos = ({ className }) => {
 
   return (
     <div
-      className={cn("flex justify-center items-center space-x-8", className)}
+      className={cn(
+        "hidden desktop:flex desktop:justify-center desktop:items-center desktop:space-x-8",
+        className
+      )}
     >
       {Social.map((social) => (
         <LinkItem social={social} key={social.alt} />

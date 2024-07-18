@@ -66,7 +66,7 @@ const Features = () => {
   return (
     <WidthConstraint className="mb-28 mt-32">
       <div
-        className="flex flex-col items-center justify-center mb-20"
+        className="flex flex-col items-center justify-center mb-20 ml-5"
         id="features"
       >
         <h1 className="text-lg font-bold text-red-500">Features</h1>
@@ -75,7 +75,7 @@ const Features = () => {
         </h2>
       </div>
 
-      <div className="flex flex-row items-center justify-between ml-20">
+      <div className="flex flex-col items-center justify-center desktop:flex desktop:flex-row desktop:items-center desktop:justify-between desktop:ml-16">
         <div className="flex flex-col ">
           {/* left */}
           {leftSide.map((left) => (
@@ -91,13 +91,13 @@ const Features = () => {
         </div>
 
         {/* Image */}
-        <div>
+        <div className="hidden desktop:inline-block">
           <img src="/assets/shot-3.jpg" alt="shot-3" className="h-[570px]" />
         </div>
 
         {/* right */}
 
-        <div className="flex flex-col  mr-10 ">
+        <div className="flex flex-col desktop:mr-10 ">
           {rightSide.map((right) => (
             <div key={right.info} className="mb-8 w-80">
               <img src={right.imgSrc} alt={right.alt} className="h-12" />

@@ -23,7 +23,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className=" grid grid-rows-[auto_1fr_auto] bg-size-200 w-screen bg-linearGradient animate-gradient z-40 overflow-clip transition duration-300 mt-0 mb-0 overflow-x-hidden">
+    <div className="overflow-scroll grid grid-rows-[auto_1fr_auto] bg-size-200 w-screen bg-linearGradient animate-gradient z-40 transition duration-300 mt-0 mb-0 overflow-x-hidden">
       <Header />
       <Hero />
       <Footer />

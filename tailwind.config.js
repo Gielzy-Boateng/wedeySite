@@ -5,6 +5,17 @@ export default {
     fontFamily: {
       wedey: "Poppins",
     },
+    screens: {
+      tablet: "420px",
+      // => @media (min-width: 640px) { ... }
+
+      laptop: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      desktop: "1230px",
+      // => @media (min-width: 1280px) { ... }
+    },
+
     extend: {
       backgroundImage: {
         linearGradient:
