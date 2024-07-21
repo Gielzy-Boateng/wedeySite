@@ -1,4 +1,4 @@
-import NavigationLinks from "./NavigationLinks";
+import { Link } from "react-router-dom";
 
 const Links = () => {
   const links = [
@@ -27,14 +27,12 @@ const Links = () => {
     ],
   ];
 
-  function handleClick(e) {
-    e.stopPropagation();
-  }
-
   return (
     <ul className="flex items-center flex-row text-white space-x-5 font-bold">
       {links.map((link) => (
-        <NavigationLinks link={link} key={link.name} />
+        <li key={link.name}>
+          <Link to={link.to}>{link.name}</Link>
+        </li>
       ))}
     </ul>
   );

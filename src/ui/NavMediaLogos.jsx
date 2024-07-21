@@ -1,8 +1,8 @@
 import { cn } from "../utils/cn";
 import LinkItem from "./LinkItem";
 
-const NavMediaLogos = ({ className }) => {
-  const Social = [
+const NavMediaLogos = ({ className, isNav = false }) => {
+  const social = [
     {
       to: "/",
       src: "/assets/fb.svg",
@@ -40,8 +40,8 @@ const NavMediaLogos = ({ className }) => {
         className
       )}
     >
-      {Social.map((social) => (
-        <LinkItem social={social} key={social.alt} />
+      {social.map((social) => (
+        <LinkItem social={social} key={social.alt} isNav={isNav} />
       ))}
     </div>
   );

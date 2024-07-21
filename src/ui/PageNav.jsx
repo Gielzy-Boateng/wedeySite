@@ -3,17 +3,17 @@ import { cn } from "../utils/cn";
 
 const PageNav = ({ className }) => {
   return (
-    <span
+    <nav
       className={cn(
         "hidden smDesktop:block smDesktop:mr-14 desktop:flex desktop:items-center font-lightbold desktop:justify-center desktop:mr-1",
         className
       )}
     >
       <Link
-        to="/#"
+        to="/"
         className="text-lg hover:transform hover:-translate-y-1 hover:text-green-500 transition duration-300 "
       >
-        <a href="#home">Home</a>
+        Home
       </Link>
 
       <Link
@@ -35,7 +35,7 @@ const PageNav = ({ className }) => {
       >
         Contact
       </a>
-    </span>
+    </nav>
   );
 };
 

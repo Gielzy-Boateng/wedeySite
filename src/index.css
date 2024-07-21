@@ -6,6 +6,10 @@ body {
   margin: 0px;
   padding: 0px;
 }
+* {
+  padding: 0;
+  margin: 0;
+}
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

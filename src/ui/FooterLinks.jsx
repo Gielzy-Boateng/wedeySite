@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { cn } from "../utils/cn";
 
-const HomeNav = ({ className }) => {
+const FooterLinks = ({ className }) => {
   return (
     <nav
       className={cn(
@@ -10,7 +10,7 @@ const HomeNav = ({ className }) => {
       )}
     >
       <Link
-        to="/#"
+        to="/"
         className="text-lg hover:transform hover:-translate-y-1 hover:text-green-500 transition duration-300"
         data-aos="fade-right"
         data-aos-duration="400"
@@ -39,4 +39,4 @@ const HomeNav = ({ className }) => {
   );
 };
 
-export default HomeNav;
+export default FooterLinks;

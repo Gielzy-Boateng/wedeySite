@@ -27,12 +27,12 @@ const OfferSection = () => {
 
   return (
     <WidthConstraint>
-      <div className="mdDesktop:flex mdDesktop:flex-row mdDesktop:flex-items mdDesktop:justify-center mdDesktop: desktop:flex desktop:items-center desktop:justify-center desktop:gap-x-20 ">
-        <div className="hidden mdDesktop:block desktop:inline-block">
+      <main className="mdDesktop:flex mdDesktop:flex-row mdDesktop:flex-items mdDesktop:justify-center mdDesktop: desktop:flex desktop:items-center desktop:justify-center desktop:gap-x-20 ">
+        <section className="hidden mdDesktop:block desktop:inline-block">
           <img src="/assets/shot-2.jpg" alt="shot-2" className="h-[600px]" />
-        </div>
-        <div className="flex flex-col items-center mdDesktop:w-[500px] w-[650px] desktop:w-[650px] mb-12">
-          <div className="mr-80 mdDesktop:mr-0 bgLaptop:mr-48 desktop:mr-44 mb-5">
+        </section>
+        <section className="flex flex-col items-center mdDesktop:w-[500px] w-[650px] desktop:w-[650px] mb-12">
+          <header className="mr-80 mdDesktop:mr-0 bgLaptop:mr-48 desktop:mr-44 mb-5">
             <h1 className="text-xl text-red-500 font-bold capitalize w-[300px] tablet:w-[400px] bgLaptop:w-[500px] tablet:ml-36 desktop:w-[600px]">
               What we offer
               <br />
@@ -40,9 +40,9 @@ const OfferSection = () => {
                 Our Services Are Beyond Compare
               </span>
             </h1>
-          </div>
+          </header>
           {offers.map((offer) => (
-            <div
+            <section
               className="bg-stone-100 mb-3 mr-72 tablet:mr-48 laptop:mr-28 bgLaptop:mr-12 smDesktop:-mr-10 desktop:mr-1 desktop:flex desktop:items-center p-5 rounded-lg"
               key={offer.info}
             >
@@ -53,10 +53,10 @@ const OfferSection = () => {
                 </span>
                 {offer.info}
               </p>
-            </div>
+            </section>
           ))}
-        </div>
-      </div>
+        </section>
+      </main>
     </WidthConstraint>
   );
 };

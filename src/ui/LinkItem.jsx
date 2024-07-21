@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-const LinkItem = ({ social }) => {
+const LinkItem = ({ social, isNav }) => {
   return (
     <Link
       to={social.to}
       data-aos-duration="600"
-      data-aos="fade-down"
+      data-aos={isNav ? `fade-down` : `fade-up`}
       data-aos-delay={`${social.delay}`}
     >
       <img
