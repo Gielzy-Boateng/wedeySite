@@ -25,7 +25,11 @@ const Footer = () => {
     >
       <WedeyLogo className="grayscale scale-[1.1]" />
       <FooterLinks className="text-white space-x-6" />
-      <NavMediaLogos />
+      <NavMediaLogos className="flex flex-row space-x-5" />
+
+      <span className="text-white text-lg">
+        &copy; All Rights Reserved 2024
+      </span>
     </footer>
   );
 };

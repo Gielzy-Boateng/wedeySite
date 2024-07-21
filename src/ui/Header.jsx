@@ -13,7 +13,7 @@ const Header = ({ about }) => {
       <WidthConstraint className="flex items-center justify-between">
         <WedeyLogo className="z-50 ml-[5px]" />
         {location.pathname === "/about" && <PageNav className="space-x-6" />}
-        <NavMediaLogos className="mr-28" isNav />
+        <NavMediaLogos className="mr-28 hidden" isNav />
       </WidthConstraint>
     </header>
   );

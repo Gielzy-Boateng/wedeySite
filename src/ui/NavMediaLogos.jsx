@@ -36,7 +36,7 @@ const NavMediaLogos = ({ className, isNav = false }) => {
   return (
     <div
       className={cn(
-        "hidden desktop:flex desktop:justify-center desktop:items-center desktop:space-x-8",
+        "desktop:flex desktop:justify-center desktop:items-center desktop:space-x-8",
         className
       )}
     >
